@@ -8,6 +8,8 @@
 
 import UIKit
 
+let identifer = "PlantCollectionViewCellID"
+
 class HomeViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var segmentController: UISegmentedControl!
@@ -15,11 +17,16 @@ class HomeViewController: UIViewController , UICollectionViewDelegate, UICollect
     @IBOutlet weak var theCollectionView: UICollectionView!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navBarSetUp()
         self.segmentViewSetup()
         theCollectionView.backgroundColor = UIColor.blue
+        
+        let nibName = UINib(nibName: "PlantCollectionViewCell", bundle:nil)
+        theCollectionView.register(nibName, forCellWithReuseIdentifier: identifer)
+        
     }
     
     //MARK: Actions  
@@ -66,7 +73,8 @@ class HomeViewController: UIViewController , UICollectionViewDelegate, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = UICollectionViewCell()
+        
+        let cell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: identifer, for: indexPath) as! PlantCollectionViewCell
         cell.backgroundColor = UIColor.red
         return cell
     }
