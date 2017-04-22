@@ -31,29 +31,55 @@
                                             <segment title="FRUITS"/>
                                             <segment title="GRAINS"/>
                                         </segments>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="segmentAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="rGe-c4-6qT"/>
                                         </connections>
                                     </segmentedControl>
                                 </subviews>
-                                <color key="backgroundColor" red="0.1450980392" green="0.6588235294" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.30588235294117649" green="0.20392156862745098" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="KNq-lV-qzx" firstAttribute="centerY" secondItem="uzK-5m-aQb" secondAttribute="centerY" id="M7l-9W-NQY"/>
                                     <constraint firstAttribute="height" constant="40" id="sP0-ZG-N1W"/>
                                     <constraint firstItem="KNq-lV-qzx" firstAttribute="centerX" secondItem="uzK-5m-aQb" secondAttribute="centerX" id="vwO-K2-HiX"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t73-F3-uRj">
+                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ktc-dP-UZj">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Rt5-4h-Nbg">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="t73-F3-uRj" secondAttribute="trailing" id="7ff-oG-2TA"/>
+                            <constraint firstItem="t73-F3-uRj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="93z-lB-AYa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t73-F3-uRj" secondAttribute="bottom" id="SaR-9P-PiG"/>
                             <constraint firstAttribute="trailing" secondItem="uzK-5m-aQb" secondAttribute="trailing" id="VdO-3i-UkV"/>
                             <constraint firstItem="uzK-5m-aQb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="a6n-bs-ez0"/>
                             <constraint firstItem="uzK-5m-aQb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hdR-lv-XOe"/>
+                            <constraint firstItem="t73-F3-uRj" firstAttribute="top" secondItem="uzK-5m-aQb" secondAttribute="bottom" id="ws0-jk-nuu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qMd-y2-WtN"/>
                     <connections>
                         <outlet property="segmentController" destination="KNq-lV-qzx" id="DDN-n5-g2M"/>
+                        <outlet property="segmentView" destination="uzK-5m-aQb" id="kAl-oe-P9C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -65,6 +91,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wS9-EW-Wjp" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ndf-4o-8xb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
