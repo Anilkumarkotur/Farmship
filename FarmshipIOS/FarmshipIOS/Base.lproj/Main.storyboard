@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,7 +44,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t73-F3-uRj">
-                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="514"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ktc-dP-UZj">
                                     <size key="itemSize" width="50" height="50"/>
@@ -133,6 +132,44 @@
                     <view key="view" contentMode="scaleToFill" id="fgz-ad-SbX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhw-VY-BJ2">
+                                <rect key="frame" x="164" y="237" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="up"/>
+                                <connections>
+                                    <action selector="upButtonDidTouch:" destination="9Cb-hX-Uwx" eventType="touchDown" id="LY8-xA-TGC"/>
+                                    <action selector="upButtonOnRelease:" destination="9Cb-hX-Uwx" eventType="touchUpInside" id="jk7-Yk-Wmw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YI8-D7-8os">
+                                <rect key="frame" x="169" y="318" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="down"/>
+                                <connections>
+                                    <action selector="downButtonDidTouch:" destination="9Cb-hX-Uwx" eventType="touchDown" id="j5S-p7-3In"/>
+                                    <action selector="downButtonOnrelease:" destination="9Cb-hX-Uwx" eventType="touchUpInside" id="xBu-1O-OwT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eu3-TC-yfW">
+                                <rect key="frame" x="238" y="284" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="right"/>
+                                <connections>
+                                    <action selector="rightButtonDidTouch:" destination="9Cb-hX-Uwx" eventType="touchDown" id="OMY-MG-gmZ"/>
+                                    <action selector="rightButtonOnRelease:" destination="9Cb-hX-Uwx" eventType="touchUpInside" id="CWJ-nh-WDM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7w-Jo-fXe">
+                                <rect key="frame" x="98" y="285" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="left"/>
+                                <connections>
+                                    <action selector="leftButtonDidTouch:" destination="9Cb-hX-Uwx" eventType="touchDown" id="Wzv-SF-XAP"/>
+                                    <action selector="leftButtonOnRelase:" destination="9Cb-hX-Uwx" eventType="touchUpInside" id="juv-wA-qeo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="jeM-zs-iGU"/>
@@ -164,7 +201,9 @@
         <scene sceneID="yuc-xj-ott">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wS9-EW-Wjp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Plant" id="WmP-AY-Q6W"/>
+                    <tabBarItem key="tabBarItem" title="Plant" image="plant" selectedImage="plant-selected" id="WmP-AY-Q6W">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -185,7 +224,9 @@
         <scene sceneID="pcE-IS-clh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rsi-uy-r4O" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Robo" id="1PL-PR-yeJ"/>
+                    <tabBarItem key="tabBarItem" title="Robo" image="Robo" selectedImage="Robo-selected" id="1PL-PR-yeJ">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SuA-jX-03K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -204,7 +245,9 @@
         <scene sceneID="uVo-tf-aOO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i6C-yZ-XOl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Screen" id="XUe-V6-aV0"/>
+                    <tabBarItem key="tabBarItem" title="Screen" image="QRScan" selectedImage="QRScan-selected" id="XUe-V6-aV0">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4zg-Ih-4i7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -220,4 +263,12 @@
             <point key="canvasLocation" x="110" y="1538"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="QRScan" width="23" height="20"/>
+        <image name="QRScan-selected" width="23" height="20"/>
+        <image name="Robo" width="23" height="20"/>
+        <image name="Robo-selected" width="23" height="20"/>
+        <image name="plant" width="20" height="19"/>
+        <image name="plant-selected" width="20" height="19"/>
+    </resources>
 </document>

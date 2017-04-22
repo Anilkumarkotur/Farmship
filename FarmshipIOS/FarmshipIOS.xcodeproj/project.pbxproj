@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		0D423CD41EAB28010077B6A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423CD31EAB28010077B6A6 /* AppDelegate.swift */; };
 		0D423CD61EAB28010077B6A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423CD51EAB28010077B6A6 /* ViewController.swift */; };
-		0D423CD91EAB28010077B6A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D423CD71EAB28010077B6A6 /* Main.storyboard */; };
-		0D423CDB1EAB28010077B6A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D423CDA1EAB28010077B6A6 /* Assets.xcassets */; };
-		0D423CDE1EAB28010077B6A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D423CDC1EAB28010077B6A6 /* LaunchScreen.storyboard */; };
 		0D423CE91EAB28010077B6A6 /* FarmshipIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423CE81EAB28010077B6A6 /* FarmshipIOSTests.swift */; };
 		0D423CF41EAB28010077B6A6 /* FarmshipIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423CF31EAB28010077B6A6 /* FarmshipIOSUITests.swift */; };
 		0D423D021EAB35E50077B6A6 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423D011EAB35E50077B6A6 /* UIColorHelper.swift */; };
@@ -20,6 +17,13 @@
 		0D423D091EAB51AD0077B6A6 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423D081EAB51AD0077B6A6 /* ScannerViewController.swift */; };
 		0D423D0C1EAB59A70077B6A6 /* PlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423D0A1EAB59A70077B6A6 /* PlantCollectionViewCell.swift */; };
 		0D423D0D1EAB59A70077B6A6 /* PlantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D423D0B1EAB59A70077B6A6 /* PlantCollectionViewCell.xib */; };
+		0D423D0F1EAB6F6E0077B6A6 /* ConfigFuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423D0E1EAB6F6E0077B6A6 /* ConfigFuelViewController.swift */; };
+		0D423D111EAB7F900077B6A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D423CD71EAB28010077B6A6 /* Main.storyboard */; };
+		0D423D151EAB9C030077B6A6 /* launchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D423D141EAB9C030077B6A6 /* launchScreen.xib */; };
+		0D423D171EABAAF60077B6A6 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D423D161EABAAF60077B6A6 /* GoogleService-Info (1).plist */; };
+		3BEB4630D3D3D6C94F583351 /* Pods_FarmshipIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40981C559BA63F57134A66E5 /* Pods_FarmshipIOSTests.framework */; };
+		983A6E2B4E16E1A98C9EBFF9 /* Pods_FarmshipIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DC8A2DA755F1FE08BB4B96 /* Pods_FarmshipIOSUITests.framework */; };
+		CDE894F5303086095A35FAA0 /* Pods_FarmshipIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44B19C732DBB257B654858E /* Pods_FarmshipIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		097E02060BF5B79D7A2258B6 /* Pods-FarmshipIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarmshipIOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FarmshipIOSUITests/Pods-FarmshipIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0D423CD01EAB28010077B6A6 /* FarmshipIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmshipIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D423CD31EAB28010077B6A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D423CD51EAB28010077B6A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D423CD81EAB28010077B6A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D423CDA1EAB28010077B6A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D423CDD1EAB28010077B6A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D423CDF1EAB28010077B6A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D423CE41EAB28010077B6A6 /* FarmshipIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmshipIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D423CE81EAB28010077B6A6 /* FarmshipIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmshipIOSTests.swift; sourceTree = "<group>"; };
@@ -59,6 +63,17 @@
 		0D423D081EAB51AD0077B6A6 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		0D423D0A1EAB59A70077B6A6 /* PlantCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantCollectionViewCell.swift; sourceTree = "<group>"; };
 		0D423D0B1EAB59A70077B6A6 /* PlantCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlantCollectionViewCell.xib; sourceTree = "<group>"; };
+		0D423D0E1EAB6F6E0077B6A6 /* ConfigFuelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigFuelViewController.swift; sourceTree = "<group>"; };
+		0D423D141EAB9C030077B6A6 /* launchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = launchScreen.xib; sourceTree = "<group>"; };
+		0D423D161EABAAF60077B6A6 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		40981C559BA63F57134A66E5 /* Pods_FarmshipIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FarmshipIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F232845A0AC44927A912B7F /* Pods-FarmshipIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarmshipIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FarmshipIOSUITests/Pods-FarmshipIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE202B84210F48CB77F82B13 /* Pods-FarmshipIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarmshipIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FarmshipIOSTests/Pods-FarmshipIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		AE826DC88C689844D3EB89DA /* Pods-FarmshipIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarmshipIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FarmshipIOS/Pods-FarmshipIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B54139EBD648C0F4802EC40D /* Pods-FarmshipIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarmshipIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FarmshipIOS/Pods-FarmshipIOS.release.xcconfig"; sourceTree = "<group>"; };
+		BB0420C044961530CBF5451F /* Pods-FarmshipIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarmshipIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FarmshipIOSTests/Pods-FarmshipIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4DC8A2DA755F1FE08BB4B96 /* Pods_FarmshipIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FarmshipIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44B19C732DBB257B654858E /* Pods_FarmshipIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FarmshipIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE894F5303086095A35FAA0 /* Pods_FarmshipIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BEB4630D3D3D6C94F583351 /* Pods_FarmshipIOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983A6E2B4E16E1A98C9EBFF9 /* Pods_FarmshipIOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,10 +107,14 @@
 		0D423CC71EAB28010077B6A6 = {
 			isa = PBXGroup;
 			children = (
+				0D423D141EAB9C030077B6A6 /* launchScreen.xib */,
+				0D423D161EABAAF60077B6A6 /* GoogleService-Info (1).plist */,
 				0D423CD21EAB28010077B6A6 /* FarmshipIOS */,
 				0D423CE71EAB28010077B6A6 /* FarmshipIOSTests */,
 				0D423CF21EAB28010077B6A6 /* FarmshipIOSUITests */,
 				0D423CD11EAB28010077B6A6 /* Products */,
+				EC4ADE946A64992552C984ED /* Pods */,
+				E99A87ADC8D17EC978DA3414 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,12 +136,12 @@
 				0D423CD51EAB28010077B6A6 /* ViewController.swift */,
 				0D423CD71EAB28010077B6A6 /* Main.storyboard */,
 				0D423D0A1EAB59A70077B6A6 /* PlantCollectionViewCell.swift */,
+				0D423D0E1EAB6F6E0077B6A6 /* ConfigFuelViewController.swift */,
 				0D423D0B1EAB59A70077B6A6 /* PlantCollectionViewCell.xib */,
 				0D423D081EAB51AD0077B6A6 /* ScannerViewController.swift */,
 				0D423D041EAB4E820077B6A6 /* tabbarController.swift */,
 				0D423D061EAB4F5A0077B6A6 /* RobosViewController.swift */,
 				0D423CDA1EAB28010077B6A6 /* Assets.xcassets */,
-				0D423CDC1EAB28010077B6A6 /* LaunchScreen.storyboard */,
 				0D423CDF1EAB28010077B6A6 /* Info.plist */,
 			);
 			path = FarmshipIOS;
@@ -151,6 +173,29 @@
 			name = Utilites;
 			sourceTree = "<group>";
 		};
+		E99A87ADC8D17EC978DA3414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F44B19C732DBB257B654858E /* Pods_FarmshipIOS.framework */,
+				40981C559BA63F57134A66E5 /* Pods_FarmshipIOSTests.framework */,
+				C4DC8A2DA755F1FE08BB4B96 /* Pods_FarmshipIOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC4ADE946A64992552C984ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE826DC88C689844D3EB89DA /* Pods-FarmshipIOS.debug.xcconfig */,
+				B54139EBD648C0F4802EC40D /* Pods-FarmshipIOS.release.xcconfig */,
+				BB0420C044961530CBF5451F /* Pods-FarmshipIOSTests.debug.xcconfig */,
+				AE202B84210F48CB77F82B13 /* Pods-FarmshipIOSTests.release.xcconfig */,
+				9F232845A0AC44927A912B7F /* Pods-FarmshipIOSUITests.debug.xcconfig */,
+				097E02060BF5B79D7A2258B6 /* Pods-FarmshipIOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D423CF81EAB28010077B6A6 /* Build configuration list for PBXNativeTarget "FarmshipIOS" */;
 			buildPhases = (
+				E4B30465D9B3A822D8C0501F /* [CP] Check Pods Manifest.lock */,
 				0D423CCC1EAB28010077B6A6 /* Sources */,
 				0D423CCD1EAB28010077B6A6 /* Frameworks */,
 				0D423CCE1EAB28010077B6A6 /* Resources */,
+				662FC09C3A38B5CBA2C909FB /* [CP] Embed Pods Frameworks */,
+				F6DD3A8D2F9D02FDA588F67D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D423CFB1EAB28010077B6A6 /* Build configuration list for PBXNativeTarget "FarmshipIOSTests" */;
 			buildPhases = (
+				ABD32232C0B15854398C5725 /* [CP] Check Pods Manifest.lock */,
 				0D423CE01EAB28010077B6A6 /* Sources */,
 				0D423CE11EAB28010077B6A6 /* Frameworks */,
 				0D423CE21EAB28010077B6A6 /* Resources */,
+				4764180A02B778F7FA4B37D9 /* [CP] Embed Pods Frameworks */,
+				9F98ED8FC2F192DF631AE29A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D423CFE1EAB28010077B6A6 /* Build configuration list for PBXNativeTarget "FarmshipIOSUITests" */;
 			buildPhases = (
+				BB119E19199B7FB1F6052409 /* [CP] Check Pods Manifest.lock */,
 				0D423CEB1EAB28010077B6A6 /* Sources */,
 				0D423CEC1EAB28010077B6A6 /* Frameworks */,
 				0D423CED1EAB28010077B6A6 /* Resources */,
+				73086DDF1AB918BC71CF35FA /* [CP] Embed Pods Frameworks */,
+				E502630572CFED90338CE392 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,10 +312,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D423CDE1EAB28010077B6A6 /* LaunchScreen.storyboard in Resources */,
-				0D423CDB1EAB28010077B6A6 /* Assets.xcassets in Resources */,
+				0D423D151EAB9C030077B6A6 /* launchScreen.xib in Resources */,
+				0D423D111EAB7F900077B6A6 /* Main.storyboard in Resources */,
 				0D423D0D1EAB59A70077B6A6 /* PlantCollectionViewCell.xib in Resources */,
-				0D423CD91EAB28010077B6A6 /* Main.storyboard in Resources */,
+				0D423D171EABAAF60077B6A6 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +335,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4764180A02B778F7FA4B37D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FarmshipIOSTests/Pods-FarmshipIOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		662FC09C3A38B5CBA2C909FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FarmshipIOS/Pods-FarmshipIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73086DDF1AB918BC71CF35FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FarmshipIOSUITests/Pods-FarmshipIOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F98ED8FC2F192DF631AE29A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FarmshipIOSTests/Pods-FarmshipIOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABD32232C0B15854398C5725 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB119E19199B7FB1F6052409 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4B30465D9B3A822D8C0501F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E502630572CFED90338CE392 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FarmshipIOSUITests/Pods-FarmshipIOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6DD3A8D2F9D02FDA588F67D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FarmshipIOS/Pods-FarmshipIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D423CCC1EAB28010077B6A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -288,6 +480,7 @@
 			files = (
 				0D423D0C1EAB59A70077B6A6 /* PlantCollectionViewCell.swift in Sources */,
 				0D423D071EAB4F5A0077B6A6 /* RobosViewController.swift in Sources */,
+				0D423D0F1EAB6F6E0077B6A6 /* ConfigFuelViewController.swift in Sources */,
 				0D423D091EAB51AD0077B6A6 /* ScannerViewController.swift in Sources */,
 				0D423D021EAB35E50077B6A6 /* UIColorHelper.swift in Sources */,
 				0D423D051EAB4E820077B6A6 /* tabbarController.swift in Sources */,
@@ -334,14 +527,6 @@
 				0D423CD81EAB28010077B6A6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0D423CDC1EAB28010077B6A6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D423CDD1EAB28010077B6A6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -442,30 +627,37 @@
 		};
 		0D423CF91EAB28010077B6A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE826DC88C689844D3EB89DA /* Pods-FarmshipIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FarmshipIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hacketon.FarmshipIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		0D423CFA1EAB28010077B6A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B54139EBD648C0F4802EC40D /* Pods-FarmshipIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FarmshipIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hacketon.FarmshipIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		0D423CFC1EAB28010077B6A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB0420C044961530CBF5451F /* Pods-FarmshipIOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +672,7 @@
 		};
 		0D423CFD1EAB28010077B6A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE202B84210F48CB77F82B13 /* Pods-FarmshipIOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +687,7 @@
 		};
 		0D423CFF1EAB28010077B6A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F232845A0AC44927A912B7F /* Pods-FarmshipIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FarmshipIOSUITests/Info.plist;
@@ -507,6 +701,7 @@
 		};
 		0D423D001EAB28010077B6A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 097E02060BF5B79D7A2258B6 /* Pods-FarmshipIOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FarmshipIOSUITests/Info.plist;
@@ -537,6 +732,7 @@
 				0D423CFA1EAB28010077B6A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D423CFB1EAB28010077B6A6 /* Build configuration list for PBXNativeTarget "FarmshipIOSTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +741,7 @@
 				0D423CFD1EAB28010077B6A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D423CFE1EAB28010077B6A6 /* Build configuration list for PBXNativeTarget "FarmshipIOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +750,7 @@
 				0D423D001EAB28010077B6A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

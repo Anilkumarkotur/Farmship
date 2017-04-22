@@ -14,11 +14,12 @@ class tabbarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navBarSetUp()
+        self.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
     }
     
     func navBarSetUp() {
         let titleLable = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 20))
-        titleLable.font = UIFont.neoSansProBold(size: 16)
+        titleLable.font = UIFont.boldSystemFont(ofSize: 16)
         titleLable.text = "Farmship"
         titleLable.textAlignment = .center
         titleLable.textColor = UIColor.white

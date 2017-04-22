@@ -25,11 +25,11 @@
                         <rect key="frame" x="0.0" y="110" width="150" height="40"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubj-qv-JDf">
-                                <rect key="frame" x="23" y="9" width="100" height="21"/>
+                                <rect key="frame" x="23" y="9.5" width="100" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="BD8-uV-3gl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

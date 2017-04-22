@@ -19,15 +19,15 @@ extension UIColor {
 
 extension UIFont {
     class func neoSansProRegular(size: CGFloat) -> UIFont? {
-        return UIFont(name: "HelveticaNeue-Regular", size: size)
+        return UIFont(name: "neoSansPro-Regular", size: size)
     }
 
     class func neoSansProMedium(size: CGFloat) -> UIFont? {
-        return UIFont(name: "HelveticaNeue-Medium", size: size)
+        return UIFont(name: "neoSansPro-Meduim", size: size)
     }
 
     class func neoSansProBold(size: CGFloat) -> UIFont? {
-        return UIFont(name: "HelveticaNeue-Bold", size: size)
+        return UIFont(name: "neoSansPro-Bold", size: size)
     }
 }
 

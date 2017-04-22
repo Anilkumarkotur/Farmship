@@ -21,8 +21,8 @@ class PlantCollectionViewCell: UICollectionViewCell {
     
     func configPlantCell() {
         self.plantImageView.image = UIImage(named: "")
-        self.plantNameLabel.font = UIFont.neoSansProMedium(size: 14)
-        self.plantNameLabel.text = ""
+        self.plantNameLabel.font = UIFont.systemFont(ofSize: 14)
+        self.plantNameLabel.text = "plant"
     }
     
 }

@@ -10,7 +10,7 @@ import UIKit
 
 let identifer = "PlantCollectionViewCellID"
 
-class HomeViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource {
+class HomeViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var segmentController: UISegmentedControl!
     @IBOutlet weak var segmentView: UIView!
@@ -26,7 +26,11 @@ class HomeViewController: UIViewController , UICollectionViewDelegate, UICollect
         
         let nibName = UINib(nibName: "PlantCollectionViewCell", bundle:nil)
         theCollectionView.register(nibName, forCellWithReuseIdentifier: identifer)
-        
+        theCollectionView.delegate = self
+
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.minimumInteritemSpacing = 2
+        flowLayout.minimumLineSpacing = 6
     }
     
     //MARK: Actions  
@@ -45,7 +49,7 @@ class HomeViewController: UIViewController , UICollectionViewDelegate, UICollect
     //MARK: UI Helper
     func navBarSetUp() {
         let titleLable = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 20))
-        titleLable.font = UIFont.neoSansProBold(size: 16)
+        titleLable.font = UIFont.systemFont(ofSize: 16)
         titleLable.text = "Farmship"
         titleLable.textAlignment = .center
         titleLable.textColor = UIColor.white
@@ -58,7 +62,7 @@ class HomeViewController: UIViewController , UICollectionViewDelegate, UICollect
     }
     
     func segmentViewSetup() {
-        segmentController.setTitleTextAttributes([NSFontAttributeName: UIFont.neoSansProMedium(size: 12) as Any], for: .normal)
+        segmentController.setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 12) as Any], for: .normal)
         segmentView.layer.masksToBounds = false
         segmentView.layer.shadowColor = UIColor.black.cgColor
         segmentView.layer.shadowOffset = CGSize(width: 5, height: 5)
@@ -77,6 +81,20 @@ class HomeViewController: UIViewController , UICollectionViewDelegate, UICollect
         let cell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: identifer, for: indexPath) as! PlantCollectionViewCell
         cell.backgroundColor = UIColor.red
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    
+    
+    //MARK: CollectionViewDelegateFlowLayout
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.view.frame.size.width / 2  - 15 , height: self.view.frame.size.width / 2 - 15)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(6, 6, 6, 6)
     }
 
 }
