@@ -20,7 +20,7 @@
 		0D423D0F1EAB6F6E0077B6A6 /* ConfigFuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423D0E1EAB6F6E0077B6A6 /* ConfigFuelViewController.swift */; };
 		0D423D111EAB7F900077B6A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D423CD71EAB28010077B6A6 /* Main.storyboard */; };
 		0D423D151EAB9C030077B6A6 /* launchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D423D141EAB9C030077B6A6 /* launchScreen.xib */; };
-		0D423D171EABAAF60077B6A6 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D423D161EABAAF60077B6A6 /* GoogleService-Info (1).plist */; };
+		0D423D191EABB0AA0077B6A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D423D181EABB0AA0077B6A6 /* GoogleService-Info.plist */; };
 		3BEB4630D3D3D6C94F583351 /* Pods_FarmshipIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40981C559BA63F57134A66E5 /* Pods_FarmshipIOSTests.framework */; };
 		983A6E2B4E16E1A98C9EBFF9 /* Pods_FarmshipIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DC8A2DA755F1FE08BB4B96 /* Pods_FarmshipIOSUITests.framework */; };
 		CDE894F5303086095A35FAA0 /* Pods_FarmshipIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44B19C732DBB257B654858E /* Pods_FarmshipIOS.framework */; };
@@ -65,7 +65,7 @@
 		0D423D0B1EAB59A70077B6A6 /* PlantCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlantCollectionViewCell.xib; sourceTree = "<group>"; };
 		0D423D0E1EAB6F6E0077B6A6 /* ConfigFuelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigFuelViewController.swift; sourceTree = "<group>"; };
 		0D423D141EAB9C030077B6A6 /* launchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = launchScreen.xib; sourceTree = "<group>"; };
-		0D423D161EABAAF60077B6A6 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		0D423D181EABB0AA0077B6A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		40981C559BA63F57134A66E5 /* Pods_FarmshipIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FarmshipIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F232845A0AC44927A912B7F /* Pods-FarmshipIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarmshipIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FarmshipIOSUITests/Pods-FarmshipIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE202B84210F48CB77F82B13 /* Pods-FarmshipIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarmshipIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FarmshipIOSTests/Pods-FarmshipIOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,8 +107,8 @@
 		0D423CC71EAB28010077B6A6 = {
 			isa = PBXGroup;
 			children = (
+				0D423D181EABB0AA0077B6A6 /* GoogleService-Info.plist */,
 				0D423D141EAB9C030077B6A6 /* launchScreen.xib */,
-				0D423D161EABAAF60077B6A6 /* GoogleService-Info (1).plist */,
 				0D423CD21EAB28010077B6A6 /* FarmshipIOS */,
 				0D423CE71EAB28010077B6A6 /* FarmshipIOSTests */,
 				0D423CF21EAB28010077B6A6 /* FarmshipIOSUITests */,
@@ -312,10 +312,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D423D191EABB0AA0077B6A6 /* GoogleService-Info.plist in Resources */,
 				0D423D151EAB9C030077B6A6 /* launchScreen.xib in Resources */,
 				0D423D111EAB7F900077B6A6 /* Main.storyboard in Resources */,
 				0D423D0D1EAB59A70077B6A6 /* PlantCollectionViewCell.xib in Resources */,
-				0D423D171EABAAF60077B6A6 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
