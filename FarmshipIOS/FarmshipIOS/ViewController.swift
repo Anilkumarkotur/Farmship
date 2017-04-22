@@ -8,15 +8,18 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var segmentController: UISegmentedControl!
     @IBOutlet weak var segmentView: UIView!
+    @IBOutlet weak var theCollectionView: UICollectionView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navBarSetUp()
         self.segmentViewSetup()
+        theCollectionView.backgroundColor = UIColor.blue
     }
     
     //MARK: Actions  
@@ -57,6 +60,16 @@ class HomeViewController: UIViewController {
         segmentView.layer.masksToBounds = true
     }
     
+    //MARK: CollectionViewDelegate CollectionViewDataSource
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = UICollectionViewCell()
+        cell.backgroundColor = UIColor.red
+        return cell
+    }
 
 }
 

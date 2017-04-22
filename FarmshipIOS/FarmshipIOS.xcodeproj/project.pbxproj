@@ -15,6 +15,11 @@
 		0D423CE91EAB28010077B6A6 /* FarmshipIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423CE81EAB28010077B6A6 /* FarmshipIOSTests.swift */; };
 		0D423CF41EAB28010077B6A6 /* FarmshipIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423CF31EAB28010077B6A6 /* FarmshipIOSUITests.swift */; };
 		0D423D021EAB35E50077B6A6 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423D011EAB35E50077B6A6 /* UIColorHelper.swift */; };
+		0D423D051EAB4E820077B6A6 /* tabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423D041EAB4E820077B6A6 /* tabbarController.swift */; };
+		0D423D071EAB4F5A0077B6A6 /* RobosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423D061EAB4F5A0077B6A6 /* RobosViewController.swift */; };
+		0D423D091EAB51AD0077B6A6 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423D081EAB51AD0077B6A6 /* ScannerViewController.swift */; };
+		0D423D0C1EAB59A70077B6A6 /* PlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423D0A1EAB59A70077B6A6 /* PlantCollectionViewCell.swift */; };
+		0D423D0D1EAB59A70077B6A6 /* PlantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D423D0B1EAB59A70077B6A6 /* PlantCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		0D423CF31EAB28010077B6A6 /* FarmshipIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmshipIOSUITests.swift; sourceTree = "<group>"; };
 		0D423CF51EAB28010077B6A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D423D011EAB35E50077B6A6 /* UIColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorHelper.swift; path = utilites/UIColorHelper.swift; sourceTree = "<group>"; };
+		0D423D041EAB4E820077B6A6 /* tabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabbarController.swift; sourceTree = "<group>"; };
+		0D423D061EAB4F5A0077B6A6 /* RobosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobosViewController.swift; sourceTree = "<group>"; };
+		0D423D081EAB51AD0077B6A6 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		0D423D0A1EAB59A70077B6A6 /* PlantCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantCollectionViewCell.swift; sourceTree = "<group>"; };
+		0D423D0B1EAB59A70077B6A6 /* PlantCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlantCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 				0D423CD31EAB28010077B6A6 /* AppDelegate.swift */,
 				0D423CD51EAB28010077B6A6 /* ViewController.swift */,
 				0D423CD71EAB28010077B6A6 /* Main.storyboard */,
+				0D423D0A1EAB59A70077B6A6 /* PlantCollectionViewCell.swift */,
+				0D423D0B1EAB59A70077B6A6 /* PlantCollectionViewCell.xib */,
+				0D423D081EAB51AD0077B6A6 /* ScannerViewController.swift */,
+				0D423D041EAB4E820077B6A6 /* tabbarController.swift */,
+				0D423D061EAB4F5A0077B6A6 /* RobosViewController.swift */,
 				0D423CDA1EAB28010077B6A6 /* Assets.xcassets */,
 				0D423CDC1EAB28010077B6A6 /* LaunchScreen.storyboard */,
 				0D423CDF1EAB28010077B6A6 /* Info.plist */,
@@ -245,6 +260,7 @@
 			files = (
 				0D423CDE1EAB28010077B6A6 /* LaunchScreen.storyboard in Resources */,
 				0D423CDB1EAB28010077B6A6 /* Assets.xcassets in Resources */,
+				0D423D0D1EAB59A70077B6A6 /* PlantCollectionViewCell.xib in Resources */,
 				0D423CD91EAB28010077B6A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D423D0C1EAB59A70077B6A6 /* PlantCollectionViewCell.swift in Sources */,
+				0D423D071EAB4F5A0077B6A6 /* RobosViewController.swift in Sources */,
+				0D423D091EAB51AD0077B6A6 /* ScannerViewController.swift in Sources */,
 				0D423D021EAB35E50077B6A6 /* UIColorHelper.swift in Sources */,
+				0D423D051EAB4E820077B6A6 /* tabbarController.swift in Sources */,
 				0D423CD61EAB28010077B6A6 /* ViewController.swift in Sources */,
 				0D423CD41EAB28010077B6A6 /* AppDelegate.swift in Sources */,
 			);

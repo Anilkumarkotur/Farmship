@@ -29,5 +29,5 @@ extension UIFont {
     class func neoSansProBold(size: CGFloat) -> UIFont? {
         return UIFont(name: "HelveticaNeue-Bold", size: size)
     }
-
 }
+
