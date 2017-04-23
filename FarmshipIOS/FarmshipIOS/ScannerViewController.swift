@@ -9,6 +9,7 @@
 
 import Foundation
 import UIKit
+import MapKit
 import Firebase
 
 class ScannerViewController: UIViewController {
@@ -16,9 +17,27 @@ class ScannerViewController: UIViewController {
     
     let dataBaseRef = FIRDatabase.database().reference().child("controller/1/direction")
     
+     let robotDatabaseRef = FIRDatabase.database().reference().child("robot/1/")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        robotDatabaseRef.child("location").observe(FIRDataEventType.value, with: { (snapshot) in
+            let postDict = snapshot.value as? [String : AnyObject] ?? [:]
+            print(postDict);
+        })
+    }
+    
+    
+    @IBOutlet weak var mapOutlet: MKMapView!
+    
+    
+    @IBAction func stopButtonDidTouch(_ sender: Any){
+        print("stop on touch")
+        self.upDateDbOnActions(value: "x")
     }
     
     @IBAction func leftButtonDidTouch(_ sender: Any) {
