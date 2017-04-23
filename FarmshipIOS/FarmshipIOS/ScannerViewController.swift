@@ -18,7 +18,8 @@ class ScannerViewController: UIViewController {
     let dataBaseRef = FIRDatabase.database().reference().child("controller/1/direction")
     
      let robotDatabaseRef = FIRDatabase.database().reference().child("robot/1/")
-    
+    var lat : CLLocationDegrees
+    var long : CLLocationDegrees
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -28,6 +29,25 @@ class ScannerViewController: UIViewController {
         robotDatabaseRef.child("location").observe(FIRDataEventType.value, with: { (snapshot) in
             let postDict = snapshot.value as? [String : AnyObject] ?? [:]
             print(postDict);
+            if let lat = postDict["lat"] {
+                self.lat = lat as! CLLocationDegrees
+                let coordinate = lat.doubleValue as CLLocationDegrees
+                self.mapOutlet.centerCoordinate.latitude = coordinate
+                
+            }
+            
+            if let long = postDict["long"] {
+                self.long = long as! CLLocationDegrees
+                let coordinate = long.doubleValue as CLLocationDegrees
+                self.mapOutlet.centerCoordinate.latitude = coordinate
+            }
+            
+            let annotation:MKAnnotation
+//            annotation.coordinate.latitude = self.lat
+//            annotation.coordinate.longitude = self.long
+                //MKAnnotation(coordinate: CLLocationCoordinate2DMake(self.lat, self.long))
+        
+            self.mapOutlet.addAnnotation(annotation)
         })
     }
     

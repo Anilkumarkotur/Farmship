@@ -28,7 +28,7 @@ class tabbarController: UITabBarController {
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.barTintColor = UIColor.farmshipColor()
         self.navigationController?.navigationBar.tintColor = UIColor.farmshipColor()
-        self.navigationController?.navigationBar.backgroundColor = UIColor.farmshipColor()
+        self.navigationController?.navigationBar.backgroundColor = UIColor.brown
     }
 
 }

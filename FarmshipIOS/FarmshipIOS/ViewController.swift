@@ -22,7 +22,7 @@ class HomeViewController: UIViewController , UICollectionViewDelegate, UICollect
         super.viewDidLoad()
         self.navBarSetUp()
         self.segmentViewSetup()
-        theCollectionView.backgroundColor = UIColor.blue
+        theCollectionView.backgroundColor = UIColor.white
         
         let nibName = UINib(nibName: "PlantCollectionViewCell", bundle:nil)
         theCollectionView.register(nibName, forCellWithReuseIdentifier: identifer)
@@ -79,7 +79,7 @@ class HomeViewController: UIViewController , UICollectionViewDelegate, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: identifer, for: indexPath) as! PlantCollectionViewCell
-        cell.backgroundColor = UIColor.red
+        cell.backgroundColor = UIColor.gray
         return cell
     }
     
